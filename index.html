@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id="a" type="text" />+<input id="b" type="text" />
+    <button onclick="sum()">=</button>
+    <output id="c"></output><br>
+    <script>
+        function sum(){
+            var a = parseInt(document.getElementById('a').value);
+            var b = parseInt(document.getElementById('b').value);
+            document.getElementById('c').innerHTML = a+b
+        }
+    </script>
+
+    <input id="d" type="text" />-<input id="e" type="text" />
+    <button onclick="minus()">=</button>
+    <output id="f"></output><br>
+    <script>
+        function minus(){
+            var a = parseInt(document.getElementById('d').value);
+            var b = parseInt(document.getElementById('e').value);
+            document.getElementById('f').innerHTML = a-b
+        }
+    </script>
+
+    <input id="aa" type="text" />*<input id="bb" type="text" />
+    <button onclick="mutiple()">=</button>
+    <output id="cc"></output><br>
+    <script>
+    function mutiple(){
+        var a = parseInt(document.getElementById('aa').value);
+        var b = parseInt(document.getElementById('bb').value);
+        document.getElementById('cc').innerHTML = a*b
+    }
+    </script>
+
+    <input id="dd" type="text" />/<input id="ee" type="text" />
+    <button onclick="devide()">=</button>
+    <output id="ff"></output><br>
+    <script>
+        function devide(){
+            var a = parseInt(document.getElementById('dd').value);
+            var b = parseInt(document.getElementById('ee').value);
+            document.getElementById('ff').innerHTML = a/b
+        }
+    </script>
+
+</body>
+</html>
